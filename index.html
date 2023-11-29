@@ -1,86 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="style.css" rel="stylesheet"/>
     <script src="script.js" defer></script>
     <script
-      src="https://kit.fontawesome.com/1529cee222.js"
-      crossorigin="anonymous"
+            src="https://kit.fontawesome.com/1529cee222.js"
+            crossorigin="anonymous"
     ></script>
 
     <title>Sign Up</title>
-  </head>
-  <body>
-    <main>
-      <div class="main-container">
+</head>
+<body>
+<main>
+    <div class="main-container">
         <div id="hero">
-          <img src="images/hero.svg" alt="logo" />
-          <p>Sign up today and start achieving your goals!</p>
-          <a
-            href="#signupForm"
-            class="down-arrow"
-            aria-label="Scroll to Signup Form"
+            <img src="images/hero.svg" alt="logo"/>
+            <p>Sign up today and start achieving your goals!</p>
+            <a
+                    href="#signupForm"
+                    class="down-arrow"
+                    aria-label="Scroll to Signup Form"
             ><i class="fa-solid fa-angle-down fa-bounce"></i
-          ></a>
+            ></a>
         </div>
         <div class="form-container">
-          <form id="signupForm" action="POST">
-            <div class="flex-container-column">
-              <h1 class="form-header">Get started</h1>
-              <section class="form-row">
-                <div class="input-container">
-                  <label for="firstname">First Name</label>
-                  <input type="text" name="firstname" id="firstname" required />
+            <form id="signupForm" action="POST">
+                <div class="flex-container-column">
+                    <h1 class="form-header">Get started</h1>
+                    <section class="form-row">
+                        <div class="input-container">
+                            <label for="firstname">First Name</label>
+                            <input type="text" name="firstname" id="firstname" required/>
+                        </div>
+                        <div class="input-container">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" name="lastname" id="lastname" required/>
+                        </div>
+                    </section>
+                    <section class="form-row">
+                        <div class="input-container">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required/>
+                        </div>
+                        <div class="input-container">
+                            <label for="phone">Phone</label>
+                            <input type="tel" name="phone" id="phone" required/>
+                        </div>
+                    </section>
+                    <section class="form-row">
+                        <div class="input-container">
+                            <label for="password">Password</label>
+                            <input
+                                    type="password"
+                                    name="password"
+                                    id="password"
+                                    required
+                            />
+                        </div>
+                        <div class="input-container">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input
+                                    type="password"
+                                    name="confirm-password"
+                                    id="confirm-password"
+                                    required
+                            />
+                        </div>
+
+                    </section>
+                    <section class="form-row">
+                        <div class="password-error-message">
+                            <p><i class="fas fa-exclamation-triangle"></i> Passwords do not match</p>
+                        </div>
+                    </section>
+                    <section class="form-row ">
+                        <div class="button-container">
+                            <button class="submit-btn" type="submit">
+                                Create Account
+                            </button>
+                        </div>
+
+                    </section>
+                    <section class="form-row">
+                        <p>Already have an account? <a href=" #
+                    ">Log In</a></p>
+                    </section>
+
                 </div>
-                <div class="input-container">
-                  <label for="lastname">Last Name</label>
-                  <input type="text" name="lastname" id="lastname" required />
-                </div>
-              </section>
-              <section class="form-row">
-                <div class="input-container">
-                  <label for="email">Email</label>
-                  <input type="email" name="email" id="email" required />
-                </div>
-                <div class="input-container">
-                  <label for="phone">Phone</label>
-                  <input type="tel" name="phone" id="phone" required />
-                </div>
-              </section>
-              <section class="form-row">
-                <div class="input-container">
-                  <label for="password">Password</label>
-                  <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    required
-                  />
-                </div>
-                <div class="input-container">
-                  <label for="confirm-password">Confirm Password</label>
-                  <input
-                    type="password"
-                    name="confirm-password"
-                    id="confirm-password"
-                    required
-                  />
-                </div>
-              </section>
-              <section class="form-row">
-                <div class="input-container">
-                  <button class="submit-btn" type="submit">
-                    Create Account
-                  </button>
-                </div>
-              </section>
-              <p>Already have an account? <a href="#">Log In</a></p>
-            </div>
-          </form>
+            </form>
         </div>
-      </div>
-    </main>
-  </body>
+    </div>
+</main>
+</body>
 </html>

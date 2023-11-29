@@ -4,13 +4,13 @@
 
 /* Color variables */
 :root {
-  --color-primary: #495fa6;
-  --color-secondary: #f6ae84;
-  --text-primary: white;
-  --text-secondary: #333;
-  --bg-primary: #f1fffa;
-  --headings-font: "Lato", sans-serif;
-  --body-font: "Noto Sans", sans-serif;
+    --color-primary: #495fa6;
+    --color-secondary: #f6ae84;
+    --text-primary: white;
+    --text-secondary: #333;
+    --bg-primary: #f1fffa;
+    --headings-font: "Lato", sans-serif;
+    --body-font: "Noto Sans", sans-serif;
 }
 
 /* CSS Reset */
@@ -95,13 +95,14 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -114,29 +115,34 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+    display: block;
 }
+
 body {
-  line-height: 1;
+    line-height: 1;
 }
+
 ol,
 ul {
-  list-style: none;
+    list-style: none;
 }
+
 blockquote,
 q {
-  quotes: none;
+    quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
-  content: none;
+    content: "";
+    content: none;
 }
+
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* Enlarged form defaults */
@@ -146,211 +152,240 @@ button,
 select,
 legend,
 textarea {
-  font-size: 1.3rem;
-  line-height: 1.2;
+    font-size: 1.3rem;
+    line-height: 1.2;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Work Sans", sans-serif;
-  font-size: 1.3rem;
-  line-height: 1.2;
-  color: #333;
-  background-color: var(--bg-primary);
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    color: #333;
+    background-color: var(--bg-primary);
 }
+
 a {
-  color: var(--color-secondary);
-  text-decoration: none;
+    color: var(--color-secondary);
+    text-decoration: none;
 }
+
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 input {
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
-  font-size: 1.25rem;
-  line-height: 1.2;
-  transition: all 0.3s ease-in-out;
-  width: 85%;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    transition: all 0.3s ease-in-out;
+    width: 85%;
 }
 
 label {
-  font-size: 1.25rem;
-  line-height: 1.2;
-  margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
 }
+
 input:focus {
-  outline: none;
-  border-color: var(--color-secondary);
-}
-input:hover {
-  border-color: var(--color-secondary);
+    outline: none;
+    border-color: var(--color-secondary);
 }
 
-.input-error {
-  border-color: #ff0000;
+.error {
+
+    border-color: red;
+
 }
 
-/* Form styles */
+.password-error-message {
+    color: red;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    visibility: hidden;
+}
 
 form {
-  border: #495fa6 1px solid;
-  border-radius: 0.5rem;
-  padding: 2rem;
-  align-self: center;
-  background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 80%;
+    padding: 2rem 2rem 2rem 4rem;
+    align-self: center;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 .main-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1rem;
-  height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    overflow: auto;
 }
+
 /* Hero styles */
 
 #hero {
-  flex: 0 0 40%;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--color-primary);
-  height: 100%;
-  justify-content: center;
-  color: var(--text-primary);
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primary);
+    height: 100%;
+    justify-content: center;
+    color: var(--text-primary);
 }
 
 #hero img {
-  max-width: 75%;
-  min-width: 65%;
-  margin: 0 auto;
+    max-width: 75%;
+    min-width: 65%;
+    margin: 0 auto;
 }
 
 #hero p {
-  font-size: 1.4rem;
-  line-height: 1.2;
-  text-align: center;
-  margin: 1rem 0;
-  padding: 0 2rem;
-  font-family: var(--headings-font);
+    line-height: 1.2;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0 2rem;
+    font-family: var(--headings-font);
 }
 
 .form-container {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-}
-.flex-container-column {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  /* gap: 0.25rem; */
+    display: flex;
+    flex: 1;
+    justify-content: center;
 }
 
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
 .form-header {
-  font-size: 2.5rem;
-  line-height: 1.2;
-  font-weight: 700;
-  margin: 1rem 0;
-  font-family: var(--headings-font);
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 1rem 0;
+    font-family: var(--headings-font);
 }
 
 .form-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 1rem 0;
-  gap: 0.5rem;
-}
-.input-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.25rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    gap: 0.5rem;
+    flex: 1;
+    justify-content: flex-start;
 }
 
-.submit-btn {
-  background-color: var(--color-primary);
-  color: var(--text-primary);
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1.25rem;
-  line-height: 1.2;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.25rem;
 }
+
 .submit-btn:hover {
-  background-color: var(--color-secondary);
-  color: var(--text-primary);
+    background-color: var(--color-secondary);
+    color: var(--text-primary);
 }
+.button-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+}
+.submit-btn {
+    background-color: var(--color-primary);
+    color: var(--text-primary);
+    border: none;
+    padding: 1rem 4.5rem;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+
+}
+
 .down-arrow {
-  display: none;
+    display: none;
 }
 
 /* Styles for medium and smaller screens */
-@media (max-width: 1200px) {
-  .form-container,
-  .flex-container-column {
-    padding: 1.5rem;
-    width: 100%;
-    height: 100%;
-  }
+@media (max-width: 1400px) {
+    .form-container,
+    .flex-container-column {
+        width: 100%;
+        height: 100%;
+    }
 
-  .form-row {
-    flex-direction: column;
-    margin: 0;
-    padding: 1rem 0;
-  }
+    .form-row {
+        flex-direction: column;
+        margin: 0;
+        padding: 1rem 0;
+    }
 
-  .input-container {
-    width: 100%;
-  }
+    .input-container {
+        width: 100%;
+    }
 
-  .submit-btn {
-    width: 95%;
-  }
+    .submit-btn {
+        width: 95%;
+    }
 
-  form {
-    min-width: 90%;
-  }
+    form {
+        max-width: 100%;
+    }
 }
+
 
 /* Specific styles for smaller screens (below 768px) */
 @media (max-width: 768px) {
-  .main-container {
-    flex-direction: column; /* Stack elements vertically */
-  }
+    .main-container {
+        flex-direction: column; /* Stack elements vertically */
+    }
 
-  #hero {
-    flex: 0 0 100%;
-    height: 50vh;
-    width: 100%;
-  }
+    #hero {
+        flex: 0 0 100%;
+        width: 100%;
+    }
 
-  .form-container {
-    width: 100%; /* Full width */
-    height: auto;
-    padding: 1rem;
-    box-sizing: border-box;
-  }
+    .form-container {
 
-  .flex-container-column {
-    width: 100%; /* Full width */
-    gap: 0.75rem;
-  }
-  .down-arrow {
-    display: block;
-    margin: 0 auto;
-  }
+        width: 95%; /* Full width */
+        flex: 0 0 100%;
+        box-sizing: border-box;
+        padding: 0;
+    }
 
-  /* No need to repeat styles for .form-container, .flex-container-column, .form-row, and form as they are already covered in the above media query */
+    form {
+        min-width: 99%; /* Full width */
+        padding: 0;
+        max-height: 100%;
+        overflow: scroll;
+
+    }
+
+    .flex-container-column {
+        width: 90%; /* Full width */
+        padding: 1rem;
+        max-height: 90%;
+    }
+
+    .down-arrow {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* No need to repeat styles for .form-container, .flex-container-column, .form-row, and form as they are already covered in the above media query */
 }
